@@ -2,7 +2,7 @@ import React from "react";
 import { NativeBaseProvider} from "native-base";
 import { useFonts, Roboto_400Regular, Roboto_700Bold } from "@expo-google-fonts/roboto";
 
-import { SignIn } from "./src/screens/SignIn"
+import { Home } from "./src/screens/Home"
 import { Loading } from "./src/components/Loading";
 import { StatusBar } from "native-base";
 
@@ -18,7 +18,7 @@ const [fontsLoaded] = useFonts({Roboto_400Regular, Roboto_700Bold})
 				backgroundColor="transparent"
 				translucent
 			/>
-			{fontsLoaded ? <SignIn /> : <Loading />}
+			{fontsLoaded ? <Home /> : <Loading />}
 		</NativeBaseProvider>
 	);
 }
